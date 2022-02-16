@@ -1,4 +1,5 @@
 import "./intro.css";
+import { GitHub ,PictureAsPdfRounded } from "@material-ui/icons";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
 import Me from "../../img/me.png";
@@ -15,7 +16,7 @@ function Intro  ()  {
     });
   }, []);
   return (
-    <div className="i">
+    <div className="i" id="intro">
       <div className="i-left">
         <div className="i-left-wrapper">
           <h2 className="i-intro">Hello, My name is</h2>
@@ -24,6 +25,14 @@ function Intro  ()  {
             <h3>
              <span ref={textRef}></span>
           </h3>
+          </div>
+          <div className="itemContainer">
+            <GitHub  className="icon" />
+            <span>Github</span>
+          </div>
+          <div className="itemContainer">
+            <PictureAsPdfRounded  className="icon" />
+            <span>CV</span>
           </div>
           <p className="i-desc">
             descripcion
